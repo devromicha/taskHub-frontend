@@ -29,7 +29,7 @@ export default function TeamsPage() {
         </button>
       </div>
 
-      {/* ২. অ্যাডমিন ভিউ (অ্যাডমিন হলে এটি দেখাবে) */}
+
       {userRole === "admin" && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <AdminTeamCard teamName="Frontend Squad" manager="Roni" members={8} />
@@ -38,7 +38,7 @@ export default function TeamsPage() {
         </div>
       )}
 
-      {/* ৩. ম্যানেজার ভিউ (ম্যানেজার হলে এটি দেখাবে) */}
+
       {userRole === "manager" && (
         <div className="bg-white rounded-[40px] border border-gray-100 shadow-sm overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-700">
           <div className="p-6 bg-gray-50/50 border-b border-gray-50 flex justify-between items-center">
@@ -51,8 +51,8 @@ export default function TeamsPage() {
           <table className="w-full">
             <tbody className="divide-y divide-gray-100">
       
-              <MemberRow name="Rita Moni" email="rita@gmail.com" role="Member" initials="RM" bgColor="bg-blue-600" />
-              <MemberRow name="Alex Smith" email="alex@gmail.com" role="Member" initials="AS" bgColor="bg-indigo-600" />
+             <MemberRow id="rita-moni" name="Rita Moni" email="rita@gmail.com" role="Member" initials="RM" bgColor="bg-blue-600" />
+<MemberRow id="alex-smith" name="Alex Smith" email="alex@gmail.com" role="Member" initials="AS" bgColor="bg-indigo-600" />
             </tbody>
           </table>
         </div>
